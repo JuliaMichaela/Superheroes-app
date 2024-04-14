@@ -1,4 +1,4 @@
-import './App.css';
+import './style/App.css';
 import Hero from './components/Hero';
 import heroes from './heroes.json';
 
@@ -14,7 +14,7 @@ function App() {
           superpowers={hero.superpowers}
           url={hero.url}
           info={hero.info}
-        />
+          key={index} />
       ))}
     </div>
   )
